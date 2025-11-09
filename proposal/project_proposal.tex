@@ -1,0 +1,38 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{parskip}
+
+\title{\textbf{Project Proposal: Surfing Maneuver Recognition using Transfer Learning}}
+\author{Kidis Sako \\ 
+\textit{Advanced Machine Learning} \\
+Professor: Reinhold von Schwerin}
+\date{09.11.2025}
+
+\begin{document}
+
+\maketitle
+
+\section*{Project Overview}
+This project aims to develop a deep learning model for automatic recognition and classification of surfing maneuvers from video data.
+
+\section*{Motivation}
+Surfing is a highly technical sport where performance analysis is crucial for athlete development. Manual annotation of surfing videos is time-consuming and requires expert knowledge. An automated classification system would benefit:
+\begin{itemize}
+    \item Coaches and athletes for performance analysis and feedback
+    \item Surfing competitions for automated scoring assistance
+\end{itemize}
+
+\section*{Technical Approach}
+The project employs transfer learning using the S3D (Separable 3D CNN) architecture, an efficient video recognition model pretrained on the Kinetics-400 action recognition dataset. Key aspects include:
+
+\begin{itemize}
+    \item \textbf{Model}: S3D architecture designed for efficient video processing (7.9M parameters)
+    \item \textbf{Transfer Learning}: Adapting the pretrained model by replacing only the final classification layer
+    \item \textbf{Dataset}: 741 training videos and 110 validation videos across 4 maneuver classes, sourced from Kaggle\footnote{\texttt{https://www.kaggle.com/datasets/twonzii/surfing-maneuver-classification}}
+\end{itemize}
+
+\section*{Expected Outcomes}
+Recognizing surfing maneuvers from video is challenging because each wave is unique. It is constantly changing in shape and size. Each surfer performs the same maneuver differently based on wave conditions and their individual style. The model must learn to identify the key movement patterns while handling these variations. 
+The goal is to achieve high classification accuracy with limited data, demonstrating strong potential for automated sports video analysis.
+\end{document}
+
