@@ -13,6 +13,8 @@ __pycache__/
 surfing_dataset/
 surfing_dataset_cache/
 
+Papers/
+
 # System files
 .DS_Store
 Thumbs.db
