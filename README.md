@@ -6,7 +6,7 @@ Automated surfing maneuver recognition using transfer learning with S3D (Separab
 
 This project applies transfer learning from the Kinetics-400 dataset to classify surfing maneuvers in video clips. By freezing pretrained S3D layers and fine-tuning only the classification head, we achieve **75.36% test accuracy** with just **4,100 trainable parameters** out of 7.9M total parameters.
 
-![Sample Surfing Frames](Papers/Final_Paper/figures/surfing_frames.png)
+![Sample Surfing Frames](Image_Results/surfing_frames.png)
 *Sample frames from a surfing maneuver video showing water spray and wave interaction patterns*
 
 ## Dataset
@@ -43,12 +43,12 @@ This project applies transfer learning from the Kinetics-400 dataset to classify
 
 ### Training History
 
-![Training History](Papers/Final_Paper/figures/training_history.png)
+![Training History](Image_Results/training_history.png)
 *Training and validation loss, accuracy, and learning rate over 25 epochs*
 
 ### Confusion Matrix
 
-![Confusion Matrix](Papers/Final_Paper/figures/confusion_matrix.png)
+![Confusion Matrix](Image_Results/confusion_matrix.png)
 *Confusion matrix showing most errors occur between similar turning maneuvers*
 
 ## Model Architecture
